@@ -1,0 +1,25 @@
+# --- Python (فایل‌های موقت پایتون) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv/
+env/
+venv/
+
+# --- Jupyter Notebook (فایل‌های موقت ژوپیتر) ---
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+Create_Model/data/
+Data_Pr/
+digits-backend/history/
+
+digits-frontend/node_modules/
+digits-frontend/dist/
+digits-frontend/.env.local
+
+.DS_Store
+Thumbs.db
+
+RESCIGIT_NET.egg-info/
