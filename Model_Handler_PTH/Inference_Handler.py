@@ -19,8 +19,6 @@ def get_model_structure(model_id: str):
 
 def load_model(model_path: str, model_id: str):
     
-    global LOADED_MODELS
-    
     if model_id in LOADED_MODELS:
         return LOADED_MODELS[model_id]
 
