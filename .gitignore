@@ -23,3 +23,8 @@ digits-frontend/.env.local
 Thumbs.db
 
 RESCIGIT_NET.egg-info/
+
+.vscode/
+.idea/
+
+[Dd]esktop.ini
