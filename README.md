@@ -82,7 +82,7 @@ The model achieves exceptional accuracy on the validation set, demonstrating the
 - **Peak Accuracy:** **99.50% - 99.54%**
 - **Training Efficiency:** Optimized DataLoaders with `num_workers=8` and `pin_memory=True`.
 
-![Training Logs](Screenshot 2026-02-14 014125.png)
+![Training Logs](Training.png)
 *Training logs showing convergence to >99.5% accuracy.*
 
 ---
@@ -136,24 +136,3 @@ Computer Engineering Student (Term 4)
 Passionate about Computer Vision and Deep Learning. This project represents a deep dive into modern neural network architectures, moving beyond basic tutorials to implement research-grade concepts like Inverted Bottlenecks and Ensemble Inference.
 
 © 2026 Sobhan Nasiri. Licensed under MIT.
-
-### 💡 Suggestions for your Images (Placement Guide)
-
-I have embedded the placeholders in the code above, but here is a quick summary of where to put your files to match the context:
-
-1.  **`image_3f5aff.png` (The Web UI):**
-    * **Where:** Under the **Project Overview** section.
-    * **Why:** This is the "Hook". It shows the user exactly what the final product looks like immediately.
-
-2.  **`Figure_1.png` (The Grid of Numbers):**
-    * **Where:** Under **Key Features** -> **Robust Preprocessing Pipeline**.
-    * **Why:** It visually proves your claim about "Standardizing irregular inputs" and "Data Augmentation."
-
-3.  **`Screenshot 2026-02-14...` (The Black Terminal Logs):**
-    * **Where:** Under **Performance & Results**.
-    * **Why:** This screenshot looks slightly more professional and "hacker-like" than the white IDE screenshot, and it clearly shows the 99.50% result.
-
-### How to use this:
-1.  Create a file named `README.md` in your project root.
-2.  Copy the code block above.
-3.  Ensure your images (`Figure_1.png`, etc.) are in the same folder as the README, or inside an `images/` folder (if so, update the links in the code like `images/Figure_1.png`).
