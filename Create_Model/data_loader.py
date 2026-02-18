@@ -7,7 +7,7 @@ def get_loaders(train_set, val_set, batch_size=64, num_workers=None, pin_memory=
     if num_workers is None:
         
         cpus = os.cpu_count()
-        print(cpus)
+        print(f"cpu count is:  {cpus}")
         num_workers = min(8, cpus) if cpus else 0
         
     if pin_memory is None:
