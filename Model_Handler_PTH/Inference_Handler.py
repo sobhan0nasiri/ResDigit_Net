@@ -11,12 +11,15 @@ LOADED_MODELS = {}
 
 def get_model_structure(model_id: str):
     
-    if model_id == "ModernCNN":
-        return Model_Architecture.ModernCNN()
+    try:
+        model_function = getattr(Model_Architecture, model_id)
+        
+        if callable(model_function):
+            return model_function()
+        
+    except AttributeError:
+        return f" NOt found Model: '{model_id}' !"
     
-    
-    raise ValueError(f"Unknown model id: {model_id}")
-
 def load_model(model_path: str, model_id: str):
     
     if model_id in LOADED_MODELS:
