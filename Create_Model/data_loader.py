@@ -4,10 +4,13 @@ from torch.utils.data import DataLoader
 
 def get_loaders(train_set, val_set, batch_size=64, num_workers=None, pin_memory=None):    
     
+    print(torch.cuda.is_available())
+    print(torch.cuda.get_device_name(0))
+    
+    cpus = os.cpu_count()
+    print(f"cpu count is:  {cpus}")
+    
     if num_workers is None:
-        
-        cpus = os.cpu_count()
-        print(f"cpu count is:  {cpus}")
         num_workers = min(8, cpus) if cpus else 0
         
     if pin_memory is None:

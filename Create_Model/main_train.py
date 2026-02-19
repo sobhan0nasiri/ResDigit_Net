@@ -39,7 +39,7 @@ def main():
 
     print("Exited successfully and let's go to train Selected Model")
     
-    BATCH_SIZE = 64 
+    BATCH_SIZE = 64
     NUM_WORKERS = 12
     EPOCHS = 10
     LEARNING_RATE = 1e-3
@@ -52,7 +52,7 @@ def main():
     
     train_loader, val_loader, workers_used = get_loaders(
         train_set, 
-        val_set, 
+        val_set,
         batch_size=BATCH_SIZE, 
         num_workers=NUM_WORKERS
     )
@@ -60,7 +60,7 @@ def main():
     inspect_data_quality(train_loader)
     
     print(f"DataLoaders created with {workers_used} workers.")
-    
+
     model = model_class(num_classes=10).to(DEVICE)
     
     criterion = nn.CrossEntropyLoss()
