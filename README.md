@@ -97,7 +97,7 @@ Navigate to the backend directory and start the Uvicorn server:
 ```bash
 cd Digits_backend
 # Install dependencies (if not already done)
-pip install -r requirements.txt
+conda env create -f requirements.yml
 
 # Run the server
 uvicorn main:app --reload
